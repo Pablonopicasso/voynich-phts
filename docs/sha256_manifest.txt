@@ -1,0 +1,43 @@
+# PHTS Theory v3.0 — Replication Package File Manifest
+# SHA-256 hashes for integrity verification
+# Generated: January 2026
+# 
+# Verify with:  sha256sum -c sha256_manifest.txt  (Linux/Mac)
+#               Get-FileHash <file> -Algorithm SHA256  (Windows PowerShell)
+#
+# NOTE: Hashes for data/eva_raw.txt depend on your download.
+# Compare against voynich.nu checksum if provided.
+
+# ── Data files ──────────────────────────────────────────────────────────────
+2f011f59bbff5db4c7cfd20af46b2060ddb08043a4a3347b0ae519ce6ea19f98  data/eva_corpus_schema.md
+76f6e2cf564e9631b1dae8cf632fa1c1b5cf0f3bb625699829af0119d7363306  data/operator_definitions.csv
+13b44714ad0ca5ca833b7a44c2fed65a93901ec8e396b9159b925d61fb06b068  data/section_mappings.csv
+e67948b336dd7c73a483432705baae7b3236a7ea1329fc695d66edd56a783036  data/glyph_positional_data.csv
+135a4e2c791708ddd312cee5cdac59799547110e91c2b0e52b46af1ed32b5bd0  data/category_encoding_table.csv
+55c2a0a7a16c64b51012080b0978c723dc79fa41e2cf5b964f8e40f3e71e580a  data/tacuinum_parallel_table.csv
+
+# ── Code files ──────────────────────────────────────────────────────────────
+adcaca615ce884c0a2ac937817f59ac35bb082c81ca5e9324acaceb3fcadfda7  code/00_setup.py
+b45923ba27221395cb0943bc9b5df3ba515d02c808cb028fb66675cec37c6bad  code/01_preprocess_eva.py
+ffe582a0e3044cd0a2fa1d5da5743a1c58f64fda96d8df863158448135b415ea  code/02_glyph_classification.py
+f56430f14d0e8c13de1f6d09d3bc457f030e1f112952120dd0b9c61a3261b3b4  code/03_grammar_coverage.py
+66c10f030519404acccb2d2698b5a5b743da255256cde358aec33707c74a3c70  code/04_operator_identification.py
+e167a56373d7fcbab9adb10bbb091ff177995a5b2825ff3fb88438441daae3ed  code/05_entropy_analysis.py
+f8da7e436c781d3b0c7018e1b03318797cbc59a5d85ebfdb92b6b573a179e8fa  code/06_ml_classifier.py
+d204e693ed4b8e054c29f5967019c77a1dee0818c8a22ed17680462ea1a3fb56  code/07_kill_shot_test.py
+35722d8790e9c22339ebff2e8b24b9c73cef77c1ea6438326caa3d1dd581f3ba  code/08_falsification_battery.py
+87c5dd6e9734e609e1f59c31f2af94b9b56d16224dfbe392da77a095c93cce71  code/09_full_validation_battery.py
+
+# ── Results (pre-populated from paper) ──────────────────────────────────────
+bfba4691c3155ab00ca26bdb8354f30e583335122e6bcc8444866bc067ae5666  results/tier1_validation_results.csv
+8f5ffa9ac7351a996625266f65a1d7ebaa34edcab676f08a36d7a0e17ab33ddc  results/kill_shot_results.csv
+df027e119b705db23b6825846300c44cf2a2ec5d0759cecf24030b53e3efef27  results/falsification_criteria.csv
+4c79c87c18248429b0051aac821ea328a7edb861d8f98e1443a5e519b27ff771  results/entropy_by_section.csv
+
+# ── Docs ────────────────────────────────────────────────────────────────────
+7e5d178fa2352e5e82839554a1f22ae23f646c83fc870dec0a36d1d0b7382bc4  docs/codebook_operators.md
+dae03924cbe35dddb0a45c227ab8f8ce01280655a13919ddb925a6685aa27d95  docs/PHTS_v3_0_Cryptologia_Submission.docx
+
+# ── To generate hashes ───────────────────────────────────────────────────────
+# Run from package root:
+#   find . -type f ! -name 'sha256_manifest.txt' | sort | xargs sha256sum > sha256_manifest.txt
