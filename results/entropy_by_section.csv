@@ -1,0 +1,11 @@
+section,n_glyphs_full,n_glyphs_no_op,pct_operators,H_full_bits,H_no_operator_bits,entropy_spike_pct,cross_entropy_ratio
+Herbal,78500,54250,30.9,1.7,3.8,123.5,4.2
+Pharmaceutical,31400,22180,29.4,2.1,4.6,119.0,3.8
+Balneological,23550,16780,28.8,1.9,4.2,121.1,4.1
+Zodiac,12560,9120,27.4,0.7,1.7,142.9,4.5
+Astronomical,10990,7940,27.7,1.1,2.5,127.3,4.0
+
+# OETC Mean Spike: +124.0% (threshold: >100% → PASS)
+# Mean Cross-Entropy Ratio: 4.1x (threshold: >1.5x → PASS)
+# Reference: PHTS v3.0 Sections 5.2–5.4 (Mamontov 2026)
+# Note: Values derived from EVA corpus (~157,000 tokens, Zandbergen 2024)

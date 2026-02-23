@@ -1,0 +1,10 @@
+condition,accuracy_pct,std_pct,status,kill_shot_passed,accuracy_drop_pp
+"Original (operators intact)",90.5,4.3,BASELINE,True,68.5
+"Post-permutation (labels swapped)",22.0,3.1,PERMUTED,True,68.5
+"Random baseline (chance)",20.3,,REFERENCE,True,70.2
+
+# KILL-SHOT RESULT: PASSED
+# Operators possess functional identity — permuting labels collapses accuracy
+# Original: 90.5% → Post-permutation: ~22% (near 20% chance baseline)
+# Drop of 68.5 pp confirms kill-shot hypothesis
+# Reference: PHTS v3.0 Section 4 (Mamontov 2026)

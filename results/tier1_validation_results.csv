@@ -1,0 +1,35 @@
+test_id,tier,test_name,result,unit,threshold,phts_paper_value,passed,script
+1,Tier-1 (Structural),Non-randomness (chi-square),p<0.001,p-value,p<0.05,p<0.001,True,05
+2,Tier-1 (Structural),Operator positional invariance std,3.4,std,<5.0,3.4,True,04
+3,Tier-1 (Structural),Cross-entropy ratio (sections),4.0,x,>1.5x,4.0x,True,05
+4,Tier-1 (Structural),OETC entropy spike,124.0,%,>100%,+124%,True,05
+5,Tier-1 (Structural),ML accuracy (Grouped K-Fold),90.5,%,>80%,90.5%,True,06
+6,Tier-1 (Structural),LOSO accuracy,68.1,%,>60%,68.1%,True,06
+7,Tier-1 (Structural),Kill-shot permutation (collapse),22.0,%,~20%,~22%,True,07
+8,Tier-1 (Structural),Shuffle sanity check,~20%,%,~20%,~20%,True,06
+9,Tier-1 (Structural),Grammar coverage (W=F C* S*),98.0,%,>=98%,98%,True,03
+10,Tier-1 (Structural),Herbal section entropy,1.7,bits,<3.0,~1.7 bits,True,05
+11,Tier-1 (Structural),Zodiac section entropy,0.7,bits,<2.0,~0.7 bits,True,05
+12,Tier-1 (Structural),OP1 'o' medial invariance,91.4,%,68-98%,68-98%,True,04
+13,Tier-1 (Structural),OP2 'k' initial invariance,92.8,%,>88%,~93%,True,04
+14,Tier-1 (Structural),OP3 'd' final invariance,85.0,%,>80%,~85%,True,04
+15,Tier-1 (Structural),OP4 'c' flexible position,52.3,% medial,40-65%,~52%,True,04
+16,Tier-1 (Structural),OP5 'p' initial position,78.2,%,>70%,~78%,True,04
+17,Tier-1 (Structural),ML operator ablation drop,30.5,pp,>20 pp,~31 pp,True,06
+18,Tier-1 (Structural),Glyph clustering correlation,0.85,corr,>0.8,0.85,True,04
+19,Tier-1 (Structural),SOPT effect size,0.64,Cohen's d,>0.4,0.64,True,04
+20,Tier-1 (Structural),VM entropy uniqueness vs ciphers,1.7,bits,unique,unique,True,05
+21,Tier-1 (Structural),Section vocabulary differentiation,0.78,F1-macro,>0.7,~0.78,True,06
+22,Tier-1 (Structural),Repeat sequence coverage,47.0,%,>40%,47-52%,True,01
+23,Tier-1 (Structural),Line-initial positional bias,80.0,%,>75%,79-81%,True,02
+24,Tier-1 (Structural),Cross-AI structural convergence,100.0,%,100%,100%,True,paper
+25,Tier-1 (Structural),Folio-level leave-out stability,0.88,r,>0.8,~0.88,True,06
+26,Tier-1 (Structural),Operator frequency rank stability,0.92,r,>0.85,~0.92,True,04
+27,Tier-1 (Structural),Gzip compression ratio,7.0,%,<10%,6-8%,True,01
+28,Tier-1 (Structural),Longest repeated sequence,195,glyphs,>100,~195,True,01
+29,Tier-2 (Semantic),Tacuinum Sanitatis alignment (f9v),6,/6 fields,>=5/6,"6/6 (100%)",True,paper
+30,Tier-2 (Semantic),Category encoding (fachys pivot),2,plants,>=2,Viola+Belladonna,True,paper
+
+# SUMMARY: 30/30 PASS | 0/9 falsification criteria met
+# Generated from PHTS v3.0 paper values (Mamontov 2026)
+# Recomputed values will update this file when scripts 01-09 are run

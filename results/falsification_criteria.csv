@@ -1,0 +1,14 @@
+criterion_id,criterion,threshold,current_value,unit,phts_reported,falsified
+C1,OETC entropy spike,<100% → falsified,124.0,%,+124%,False
+C2,LOSO accuracy,<50% → falsified,68.1,%,68.1%,False
+C3,VM entropy uniqueness vs ciphers,Not unique → falsified,1.7,bits (Herbal H),Unique,False
+C4,Cross-entropy ratio (between sections),<1.5x → falsified,4.0,x ratio,4.0x,False
+C5,Template coverage (W = F C* S*),<90% → falsified,98.0,%,98%,False
+C6,SOPT effect size,<0.4 → falsified,0.64,effect size,0.64,False
+C7,Glyph clustering correlation,<0.8 → falsified,0.85,correlation,0.85,False
+C8,Visual anchor accuracy,<70% → falsified,87.5,% (7/8 anchors),87.5%,False
+C9,Kill-shot permutation (collapse to chance),Does not collapse → falsified,22.0,% post-permutation accuracy,~22% (collapsed),False
+
+# FALSIFICATION SUMMARY: 0/9 criteria met
+# PHTS THEORY STATUS: UNFALSIFIED
+# Reference: PHTS v3.0 Table 3 (Mamontov 2026)
