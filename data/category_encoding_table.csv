@@ -1,0 +1,29 @@
+component,eva_pattern,humoral_meaning,tier,confidence,examples,notes
+PREFIX,k- / kc-,Hot (humoral temperature),Tier-2,0.75,"kariin=hot-herb, kchedy=hot-process","k-initial gallows marks thermal category HOT"
+PREFIX,t-,Hot-Moist (combined quality),Tier-2,0.70,"taiin=hot-moist-substance","t-gallows marks combined quality"
+PREFIX,p- / f-,Cold (humoral temperature),Tier-2,0.75,"fachys=cold-herb, pedy=cold-process","p/f-initial marks thermal category COLD"
+PREFIX,sh-,Process / Procedure,Tier-2,0.68,"shol=liquid-process, shory=complete-process","sh-ligature marks procedural action"
+PREFIX,q-,Neutral / Query,Tier-2,0.62,"qokeedy=neutral-query","q-gallows marks neutral/undifferentiated"
+CORE,-ch-,Herb / Botanical substance,Tier-2,0.72,"fachys=cold-herb","ch-ligature in medial = botanical"
+CORE,-o-,Moist / Liquid quality,Tier-2,0.74,"shol=moist-process","single-o medial = moisture quality"
+CORE,-ee-,Extended / Prolonged,Tier-2,0.65,"kcheed=hot-extended","ee-ligature = duration or amplification"
+CORE,-ai-,Animal / Vital substance,Tier-2,0.60,"taiin=hot-vital","ai-digraph = vital or animal quality"
+CORE,-or-,Procedure action,Tier-2,0.68,"saior=dry-procedure","or-sequence = action marker"
+SUFFIX,-ey / -y,Plant category final,Tier-2,0.73,"qokey=neutral-plant","y-terminal = plant/botanical end marker"
+SUFFIX,-ys / -s,Category marker final,Tier-2,0.71,"fachys=cold-herb-CAT","ys/s-terminal = category marker"
+SUFFIX,-or,Procedure end,Tier-2,0.67,"saior=dry-procedure-END","or-terminal = procedure completion"
+SUFFIX,-ar,Property marker,Tier-2,0.65,"ataiin-ar=degree-property","ar-terminal = quality/degree"
+SUFFIX,-ol,Liquid preparation,Tier-2,0.69,"shol=process-LIQUID","ol-terminal = liquid form"
+SUFFIX,-dy / -edy,Process completion,Tier-2,0.64,"shory/shedy=complete","dy/edy-terminal = completion marker"
+
+# CRITICAL TIER-2 NOTE:
+# All entries above are Tier-2 semantic hypotheses (PHTS v3.0, Section 6.1)
+# These are CONSISTENT WITH but NOT PROVEN BY the structural evidence
+# They cannot be independently verified without a bilingual anchor text
+# Confidence values are researcher estimates, not statistically validated
+# The category encoding discovery (fachys=Viola AND Belladonna) is the
+# primary empirical anchor (PHTS v3.0, Section 6.1)
+#
+# KEY DISCOVERY: 'fachys' appears for f9v (Viola, Cold-Moist) and
+# f1v (Belladonna, Cold-Dry). Shared quality: COLD → encodes CATEGORY,
+# not specific plant. This is the Category Encoding System pivot point.
