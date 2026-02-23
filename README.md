@@ -115,7 +115,7 @@ python code/09_full_validation_battery.py
 
 The EVA transcription corpus is **publicly available** at:
 - voynich.nu/transcr.html (René Zandbergen, 2024)
-- Also archived on Zenodo: DOI 10.5281/zenodo.xxxxxxx (placeholder)
+- Also archived on Zenodo: DOI 10.5281/zenodo.18742435 (placeholder)
 
 The corpus contains ~157,000 glyph tokens across ~240 folios in the standard interlinear format.
 
@@ -136,7 +136,7 @@ matplotlib ≥ 3.7
 
 ## Citing This Package
 
-Mamontov, P. (2026). PHTS Theory v3.0 Replication Package [Data and Code]. *Zenodo*. DOI: 10.5281/zenodo.xxxxxxx
+Mamontov, P. (2026). PHTS Theory v3.0 Replication Package [23.02.2026]. *Zenodo*. DOI: 10.5281/zenodo.18742435
 
 ---
 
